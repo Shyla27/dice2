@@ -4,7 +4,12 @@ body, html{
     background-repeat: no-repeat;
     background-size: contain;
 }
-
+.intro {
+  color:aqua;
+  background-color: black;
+  opacity: 0.5;
+font-size: 25px;
+}
 h2{
     color: brown;
     font-size: 40px;
