@@ -1,0 +1,58 @@
+body, html{
+    height: 100%;
+    background-image: url(images/as.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h2{
+    color: brown;
+    font-size: 40px;
+  color: blue;
+}
+.btn-lg{
+    color: red;
+    background: black;
+    border-radius: 15px;
+    box-shadow: #444;
+}
+h1 {
+  background-color: teal;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.jumbotron{
+margin: 20px;
+padding: 20px;
+background: black;
+}
+.scroll{
+    color: skyblue;
+    font-size: 25px;
+    font-style: bold;
+}
+ .container{
+     display: none;
+ }
+  .result1{
+      font-style: italic;
+      font-size: 20px;
+      color: aquamarine;
+  }
+  .result2{
+    font-size: 20px;
+    color: aquamarine;
+    font-style: italic;
+  }
+
+  .center {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+  #start{
+      width: 30%;
+
+  }
