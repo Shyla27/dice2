@@ -1,4 +1,4 @@
-//BUSINESS LOGIC
+// business logic interface
 
 $(document).ready(function () {
     function Player(id, currentScore, totalScore) {
@@ -8,13 +8,14 @@ $(document).ready(function () {
     player1 = new Player();
     player2 = new Player();
 
-    //UI LOGIC
+    //user logic interface
+    //player 1 
     $("button#roll-dice1").on("click", function () {
         Player.prototype.currentScore = Math.floor(Math.random() * 6) + 1;
         player1.totalScore += player1.currentScore;
 
         if (player1.currentScore === 1) {
-            alert("You have scored 1! Next player!");
+            alert("Your score is 1! please pass the dice to the next player!");
             $("button#roll-dice1").hide();
             $("butoon#roll-dice2").show();
 
@@ -24,15 +25,15 @@ $(document).ready(function () {
         }
 
         if (player1.totalScore === 100) {
-            alert("Player 1 wins!!");
+            alert("winner is player1!!");
         }
-
+//player 2
         $("button#roll-dice2").on("click", function () {
             Player.prototype.currentScore = Math.floor(Math.random() * 6) + 1;
             player2.totalScore += player2.currentScore;
 
             if (player2.currentScore === 1) {
-                alert("You have scored 1!! Back to player 1!");
+                alert("Your score is 1! please pass the dice to the next player!");
                 $("button#roll-dice2").hide();
                 $("butoon#roll-dice1").show();
 
@@ -42,7 +43,7 @@ $(document).ready(function () {
             }
 
             if (player2.totalScore === 100) {
-                alert("Player 2 wins!!");
+                alert("winner is player2!!");
             }
         })
     })
